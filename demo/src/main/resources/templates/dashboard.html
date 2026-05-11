@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Global Weather</title>
+    <style>
+        body { font-family: san-serif; text-align: center; background: #f4f7f6; padding: 40px; }
+        .card { background: white; padding: 20px; margin: 15px; display: inline-block; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+            h2 { color: #2c3e50; }
+        h3 { color: #16a095; }
+    </style>
+</head>
+</body>
+<h1>🌍 Global Weather Dashboard</h1>
+<div class="card">
+<h2>Fresno, CA</h2>
+<h3 th:text="${fresnoWeather}">Loading...</h3>
+</div>
+<div class="card">
+    <h2>New York, NY</h2>
+    <h3 th:text="${nyWeather}">Loading...</h3>
+</div>
+<div class="card">
+<h2>London, UK 🇬🇧</h2>
+<h3 th:text="${londonWeather}">Loading...</h3>
+</div>
+</body>
+</html>
